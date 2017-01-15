@@ -1,0 +1,5 @@
+#!/bin/bash          
+echo Moving XMP metadata into JPG files in dir $PWD recursively
+
+#  exiftool -P -progress -overwrite_original_in_place -tagsfromfile %d%f.xmp -r -ext jpg .
+exiftool -P -progress -overwrite_original_in_place -tagsfromfile %d%f.xmp -r -ext jpg .
